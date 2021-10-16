@@ -13,7 +13,7 @@ Users should be able to:
 
 
 ### Links
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Live Site URL: [live URL here](https://hamed3958.github.io/Coding-bootcamp-testimonials-slider/)
 
 ### Built with
 - Semantic HTML5 markup
