@@ -1,0 +1,159 @@
+*,
+html {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: "Inter";
+  src: url(../font/Inter-Light.ttf);
+  font-weight: 300;
+}
+
+@font-face {
+  font-family: "Inter";
+  src: url(../font/Inter-Medium.ttf);
+  font-weight: 500;
+}
+
+@font-face {
+  font-family: "Inter";
+  src: url(../font/Inter-Bold.ttf);
+  font-weight: 700;
+}
+
+body {
+  font-family: "inter";
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: space-between;
+  align-items: center;
+  height: 100vh;
+}
+
+.container {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  height: 100vh;
+  background-image: url(../images/pattern-bg.svg),
+    url(../images/pattern-curve.svg), url(../images/pattern-quotes.svg);
+  background-repeat: no-repeat;
+  background-position: 86% 48%, left bottom, 17% 32%;
+}
+
+.mySlides {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.txt-box {
+  width: 635px;
+  height: 354px;
+  z-index: 1;
+}
+
+.paragraph {
+  font-weight: 300;
+  font-size: 32px;
+  line-height: 44px;
+  color: #202047;
+  margin-top: 64px;
+}
+
+.name-txt {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 38px;
+  color: #202047;
+  display: inline-block;
+  margin-top: 32px;
+}
+
+.job-txt {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 38px;
+  color: #b9b9ce;
+  display: inline-block;
+  margin-left: 10px;
+}
+
+.img-box {
+  width: 540px;
+  height: 540px;
+  position: relative;
+  left: -65px;
+  box-shadow: 0px 40px 50px -30px rgba(36, 36, 113, 0.495001);
+}
+
+.img-box > img {
+  border-radius: 5px;
+}
+
+.buttons {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+  align-items: center;
+  width: 112px;
+  height: 56px;
+  background: #ffffff;
+  box-shadow: 0px 15px 20px -10px rgba(36, 36, 113, 0.0991313);
+  border-radius: 28px;
+  position: absolute;
+  top: 510px;
+  left: 62px;
+}
+
+.prev,
+.next {
+  border-radius: 28px;
+  width: 55px;
+  height: 50px;
+  cursor: pointer;
+  transition: 0.6s ease;
+}
+
+.prev {
+  background: url(../images/icon-prev.svg) no-repeat center;
+}
+
+.next {
+  background: url(../images/icon-next.svg) no-repeat center;
+}
+
+.prev:hover,
+.next:hover {
+  background-color: rgba(36, 36, 113, 0.0991313);
+}
+
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fade {
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
+}
