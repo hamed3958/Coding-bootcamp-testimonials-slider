@@ -23,3 +23,14 @@ function showSlides(n) {
 
   slides[slideIndex - 1].style.display = "flex";
 }
+
+document.onkeydown = function (e) {
+  switch (e.key) {
+    case 'ArrowLeft':
+      plusSlides(-1);
+      break;
+    case 'ArrowRight':
+      plusSlides(1);
+      break;
+  }
+};
